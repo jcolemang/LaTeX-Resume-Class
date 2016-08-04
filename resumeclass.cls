@@ -15,25 +15,24 @@
 %\usepackage[T1]{fontenc}
 
 
-\newenvironment{resume} {
+\newenvironment{resumebody} {
   % before
 
   % selecting the font
   \fontfamily{iwona}\selectfont
-  \@float{table}
-  \begin{tabularx}{1\textwidth}{ l | l | r}
-
+  \tabularx{1.0\textwidth}{ l | X }
 } {
   % after
-  \end{tabularx}
-  \end@float
+  \endtabularx
 }
 
 
-\newenvironment{header} {
+\newenvironment{resumeheader} {
   % before
+  \begin{center}
 } {
   % after
+  \end{center}
   \par
 }
 
@@ -47,7 +46,11 @@
 }
 
 \newcommand{\makeheader} {
-  \resumename & \resumeemail & Just for fun \\
+  \resumename \par \resumeemail
+}
+
+\newcommand{\row}[2] {
+  #1 & #2 \\
 }
 
 
