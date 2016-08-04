@@ -15,18 +15,6 @@
 %\usepackage[T1]{fontenc}
 
 
-\newenvironment{resumebody} {
-  % before
-
-  % selecting the font
-  \fontfamily{iwona}\selectfont
-  \tabularx{1.0\textwidth}{ l | X }
-} {
-  % after
-  \endtabularx
-}
-
-
 \newenvironment{resumeheader} {
   % before
   \begin{center}
@@ -49,8 +37,33 @@
   \resumename \par \resumeemail
 }
 
-\newcommand{\row}[2] {
-  #1 & #2 \\
+
+\newenvironment{resumebody} {
+  % before
+
+  % selecting the font
+  \fontfamily{iwona}\selectfont
+  \tabularx{1.0\textwidth}{ l | X r }
+} {
+  % after
+  \endtabularx
+}
+
+
+\newcommand{\leftcolumn}[1] {
+  #1
+}
+
+\newcommand{\centercolumn}[1] {
+  & #1 
+}
+
+\newcommand{\bigcentercolumn}[1] {
+  & #1 \\
+}
+
+\newcommand{\rightcolumn}[2] {
+  & #1 \\
 }
 
 
