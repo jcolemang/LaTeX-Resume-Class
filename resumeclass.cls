@@ -29,12 +29,29 @@
   \def\resumename{#1}
 }
 
+\newcommand{\addrlineone}[1] {
+  \def\resumeaddrone{#1}
+}
+
+\newcommand{\addrlinetwo}[1] {
+  \def\resumeaddrtwo{#1}
+}
+
+\newcommand{\phonenumber}[1] {
+  \def\phone{#1}
+}
+
 \newcommand{\email}[1] {
   \def\resumeemail{#1}
 }
 
 \newcommand{\makeheader} {
-  \resumename \par \resumeemail
+  \fontfamily{iwona}\selectfont
+  \textbf{\resumename} \par
+  \resumeaddrone \par
+  \resumeaddrtwo \par
+  \phone \par
+  \resumeemail \par
 }
 
 
@@ -43,27 +60,27 @@
 
   % selecting the font
   \fontfamily{iwona}\selectfont
-  \tabularx{1.0\textwidth}{ l | X r }
+  \tabularx{1.0\textwidth}{  l  X  r  }
 } {
   % after
   \endtabularx
 }
 
 
-\newcommand{\leftcolumn}[1] {
-  #1
+\newcommand{\sectiontitle}[1] {
+  \textbf{#1}
 }
 
-\newcommand{\centercolumn}[1] {
+\newcommand{\leftcolumn}[1] {
   & #1 
 }
 
-\newcommand{\bigcentercolumn}[1] {
+\newcommand{\rightcolumn}[1] {
   & #1 \\
 }
 
-\newcommand{\rightcolumn}[2] {
-  & #1 \\
+\newcommand{\bigcolumn}[1] {
+  & \multicolumn{2}{>{\hsize2\hsize}X}{#1} \\
 }
 
 
