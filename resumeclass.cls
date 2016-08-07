@@ -5,7 +5,8 @@
 \LoadClassWithOptions{article}
 
 \RequirePackage[margin=1.0in]{geometry}
-\RequirePackage{tabularx}
+\usepackage{tabularx}
+\usepackage{multirow}
 
 % left for documentation
 % setting the font
