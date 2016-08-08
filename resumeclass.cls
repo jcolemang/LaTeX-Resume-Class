@@ -9,6 +9,8 @@
 \usepackage{multirow}
 \usepackage{enumerate}
 
+\thispagestyle{empty}
+
 % left for documentation
 % setting the font
 % \input T1fmv.fd
