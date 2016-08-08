@@ -9,16 +9,11 @@
 \usepackage{multirow}
 \usepackage{enumerate}
 
+% getting rid of line numbers
 \thispagestyle{empty}
 
-% left for documentation
-% setting the font
-% \input T1fmv.fd
-%\renewcommand*\sfdefault{urw}
-%\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
-%\usepackage[T1]{fontenc}
 
-
+% header stuff
 \newenvironment{resumeheader} {
   % before
 } {
@@ -49,7 +44,7 @@
 \newcommand{\makeheader} {
   \begin{center}
     \fontfamily{iwona}\selectfont
-    \textbf{\resumename} \par
+    \textbf{\LARGE \resumename} \par
     \resumeaddrone \par
     \resumeaddrtwo \par
     \phone \par
