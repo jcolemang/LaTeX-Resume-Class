@@ -4,7 +4,7 @@
 \ProvidesClass{resumeclass}
 \LoadClassWithOptions{article}
 
-\RequirePackage[margin=1.0in]{geometry}
+\RequirePackage[margin=0.75in]{geometry}
 \usepackage{tabularx}
 \usepackage{multirow}
 \usepackage{enumerate}
@@ -19,10 +19,8 @@
 
 \newenvironment{resumeheader} {
   % before
-  \begin{center}
 } {
   % after
-  \end{center}
 }
 
 % personal information
@@ -47,12 +45,14 @@
 }
 
 \newcommand{\makeheader} {
-  \fontfamily{iwona}\selectfont
-  \textbf{\resumename} \newline
-  \resumeaddrone \newline
-  \resumeaddrtwo \newline
-  \phone \newline
-  \resumeemail \newline
+  \begin{center}
+    \fontfamily{iwona}\selectfont
+    \textbf{\resumename} \par
+    \resumeaddrone \par
+    \resumeaddrtwo \par
+    \phone \par
+    \resumeemail
+  \end{center}
 }
 
 
@@ -61,7 +61,7 @@
 
   % selecting the font
   \fontfamily{iwona}\selectfont
-  \tabularx{1.0\textwidth}{ @{} l >{\small}X @{} >{\small}r @{} }
+  \tabularx{1.0\textwidth}{ l | >{\small}X @{} >{\small}r }
 } {
   % after
   \endtabularx
