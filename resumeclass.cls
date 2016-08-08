@@ -7,6 +7,7 @@
 \RequirePackage[margin=1.0in]{geometry}
 \usepackage{tabularx}
 \usepackage{multirow}
+\usepackage{enumerate}
 
 % left for documentation
 % setting the font
@@ -22,7 +23,6 @@
 } {
   % after
   \end{center}
-  \par
 }
 
 % personal information
@@ -48,11 +48,11 @@
 
 \newcommand{\makeheader} {
   \fontfamily{iwona}\selectfont
-  \textbf{\resumename} \par
-  \resumeaddrone \par
-  \resumeaddrtwo \par
-  \phone \par
-  \resumeemail \par
+  \textbf{\resumename} \newline
+  \resumeaddrone \newline
+  \resumeaddrtwo \newline
+  \phone \newline
+  \resumeemail \newline
 }
 
 
@@ -61,7 +61,7 @@
 
   % selecting the font
   \fontfamily{iwona}\selectfont
-  \tabularx{1.0\textwidth}{  l  X  r  }
+  \tabularx{1.0\textwidth}{  l X r  }
 } {
   % after
   \endtabularx
@@ -82,6 +82,25 @@
 
 \newcommand{\bigcolumn}[1] {
   & \multicolumn{2}{>{\hsize2\hsize}X}{#1} \\
+}
+
+
+\newcommand{\experiencetitle}[1] {
+  \textbf{#1} \newline
+}
+
+\newcommand{\experiencelocation}[1] {
+  \textit{#1}
+}
+
+\newenvironment{experiencenotes} {
+  \begin{itemize}
+} {
+  \end{itemize}
+}
+
+\newcommand{\experiencenote}[1] {
+  \item #1
 }
 
 
