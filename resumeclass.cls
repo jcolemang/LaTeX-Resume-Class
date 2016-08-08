@@ -61,7 +61,7 @@
 
   % selecting the font
   \fontfamily{iwona}\selectfont
-  \tabularx{1.0\textwidth}{  l X r  }
+  \tabularx{1.0\textwidth}{ @{} l >{\small}X @{} >{\small}r @{} }
 } {
   % after
   \endtabularx
@@ -81,7 +81,7 @@
 }
 
 \newcommand{\bigcolumn}[1] {
-  & \multicolumn{2}{>{\hsize2\hsize}X}{#1} \\
+  & \multicolumn{2}{>{\hsize2\hsize}l}{#1} \\
 }
 
 
