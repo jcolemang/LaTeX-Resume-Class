@@ -63,7 +63,7 @@
 
   % selecting the font
   %\fontfamily{iwona}\selectfont
-  \tabularx{1.0\textwidth}{ l >{\small}X @{} >{\small}r }
+  \tabularx{\textwidth}{ l >{\small}X >{\small}r }
 } {
   % after
   \endtabularx
@@ -83,12 +83,12 @@
 }
 
 \newcommand{\bigcolumn}[1] {
-  & \multicolumn{2}{>{\hsize2\hsize}l}{#1} \\ \\
+  & #1 \\ \\
 }
 
 
 \newcommand{\experiencetitle}[1] {
-  \textbf{#1}
+  \textbf{#1} 
 }
 
 \newcommand{\experiencelocation}[1] {
