@@ -8,6 +8,11 @@
 \usepackage{tabularx}
 \usepackage{multirow}
 \usepackage{enumerate}
+\usepackage{soul}
+
+\usepackage[sfdefault,light]{roboto}
+\usepackage[T1]{fontenc}
+\renewcommand{\familydefault}{\sfdefault}
 
 % getting rid of line numbers
 \thispagestyle{empty}
@@ -43,7 +48,7 @@
 
 \newcommand{\makeheader} {
   \begin{center}
-    \fontfamily{iwona}\selectfont
+    %\fontfamily{iwona}\selectfont
     \textbf{\LARGE \resumename} \par
     \resumeaddrone \par
     \resumeaddrtwo \par
@@ -57,8 +62,8 @@
   % before
 
   % selecting the font
-  \fontfamily{iwona}\selectfont
-  \tabularx{1.0\textwidth}{ l | >{\small}X @{} >{\small}r }
+  %\fontfamily{iwona}\selectfont
+  \tabularx{1.0\textwidth}{ l >{\small}X @{} >{\small}r }
 } {
   % after
   \endtabularx
@@ -66,7 +71,7 @@
 
 
 \newcommand{\sectiontitle}[1] {
-  \textbf{#1}
+  {\footnotesize \so{\textbf{#1}}}
 }
 
 \newcommand{\leftcolumn}[1] {
@@ -74,16 +79,16 @@
 }
 
 \newcommand{\rightcolumn}[1] {
-  & #1 \\
+  & #1 \\ \\
 }
 
 \newcommand{\bigcolumn}[1] {
-  & \multicolumn{2}{>{\hsize2\hsize}l}{#1} \\
+  & \multicolumn{2}{>{\hsize2\hsize}l}{#1} \\ \\
 }
 
 
 \newcommand{\experiencetitle}[1] {
-  \textbf{#1} \newline
+  \textbf{#1}
 }
 
 \newcommand{\experiencelocation}[1] {
