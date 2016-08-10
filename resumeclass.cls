@@ -57,16 +57,18 @@
   \end{center}
 }
 
-
 \newenvironment{resumebody} {
   % before
 
   % selecting the font
   %\fontfamily{iwona}\selectfont
+  \bgroup
+  \centering
   \tabularx{\textwidth}{ l >{\small}X >{\small}r }
 } {
   % after
   \endtabularx
+  \egroup
 }
 
 
