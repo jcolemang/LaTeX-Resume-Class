@@ -71,7 +71,7 @@
   % selecting the font
   \bgroup
   \centering
-  \tabularx{\textwidth}{ l >{\small}X >{\small}l }
+  \tabularx{\textwidth}{ l >{\small}X >{\small}r }
 } {
   % after
   \endtabularx
