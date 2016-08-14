@@ -54,7 +54,7 @@
 \newcommand{\makeheader} {
   \begin{center}
     %\fontfamily{iwona}\selectfont
-    \textbf{\LARGE \resumename} \par
+    \textmd{\huge \textsc{\resumename}} \par
     \resumeaddrone \par
     \resumeaddrtwo \par
     \phone \par
@@ -66,21 +66,18 @@
 % The resume header is considered a separate entity.
 % Do not embed the two.
 \newenvironment{resumebody} {
-  % before
-
   % selecting the font
   \bgroup
   \centering
   \tabularx{\textwidth}{ l >{\small}X >{\small}r }
 } {
-  % after
   \endtabularx
   \egroup
 }
 
 % for things like 'Experience', 'Education'
 \newcommand{\sectiontitle}[1] {
-  {\footnotesize \so{\textbf{#1}}}
+  {\footnotesize \uppercase{\so{\textbf{#1}}}}
 }
 
 % Really the center column of the page, but the absolute left
