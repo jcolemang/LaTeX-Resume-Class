@@ -55,10 +55,12 @@
   \begin{center}
     %\fontfamily{iwona}\selectfont
     \textmd{\huge \textsc{\resumename}} \par
-    \resumeaddrone \par
-    \resumeaddrtwo \par
-    \phone \par
-    \resumeemail
+    { \small
+      \resumeaddrone \par
+      \resumeaddrtwo \par
+      \phone \par
+      \resumeemail
+    }
   \end{center}
 }
 
