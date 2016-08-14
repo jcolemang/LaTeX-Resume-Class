@@ -26,6 +26,7 @@
 }
 
 % personal information
+% this through the \email command set variables used by \makeheader below
 \newcommand{\name}[1] {
   \def\resumename{#1}
 }
@@ -46,6 +47,10 @@
   \def\resumeemail{#1}
 }
 
+% creates the header at the top of the page
+% I wanted to be able to have the name at the very top of the .tex
+% document as a form of documentation of the author but the header
+% needs to be within the resumeheader environment
 \newcommand{\makeheader} {
   \begin{center}
     %\fontfamily{iwona}\selectfont
@@ -57,11 +62,13 @@
   \end{center}
 }
 
+% Used for the main body of the resume but NOT the header
+% The resume header is considered a separate entity.
+% Do not embed the two.
 \newenvironment{resumebody} {
   % before
 
   % selecting the font
-  %\fontfamily{iwona}\selectfont
   \bgroup
   \centering
   \tabularx{\textwidth}{ l >{\small}X >{\small}l }
@@ -71,11 +78,13 @@
   \egroup
 }
 
-
+% for things like 'Experience', 'Education'
 \newcommand{\sectiontitle}[1] {
   {\footnotesize \so{\textbf{#1}}}
 }
 
+% Really the center column of the page, but the absolute left
+% is reserved for the section title
 \newcommand{\leftcolumn}[1] {
   & #1 
 }
@@ -84,15 +93,18 @@
   & #1 \\ \\
 }
 
+% Doesn't include the extra line break of my standard right column
+\newcommand{\rightcolumnsinglebreak}[1] {
+  & #1 \\
+}
+
+% fills both the absolute center and right columns of the page
 \newcommand{\bigcolumn}[1] {
   & #1 \\ \\
 }
 
-\newcommand{\leftrightcolumns}[2] {
-  & #1 & #2 \\
-}
 
-
+% this and the below for formatting experience items
 \newcommand{\experiencetitle}[1] {
   \textbf{#1} 
 }
