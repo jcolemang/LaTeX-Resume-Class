@@ -64,7 +64,7 @@
   %\fontfamily{iwona}\selectfont
   \bgroup
   \centering
-  \tabularx{\textwidth}{ l >{\small}X >{\small}r }
+  \tabularx{\textwidth}{ l >{\small}X >{\small}l }
 } {
   % after
   \endtabularx
@@ -86,6 +86,10 @@
 
 \newcommand{\bigcolumn}[1] {
   & #1 \\ \\
+}
+
+\newcommand{\leftrightcolumns}[2] {
+  & #1 & #2 \\
 }
 
 
