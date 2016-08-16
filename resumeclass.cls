@@ -10,9 +10,21 @@
 \usepackage{enumerate}
 \usepackage{soul}
 
+% interesting serif font, sort of a medieval look, particularly
+% in the J's 
+% \usepackage{gentium}
+
+% good serif font. I would describe it as professional, maybe
+% slightly conservative
+%\usepackage{newtxtext}
+
+% solid sans serif font, looks modern, something I would see on the web
 \usepackage[sfdefault,light]{roboto}
-\usepackage[T1]{fontenc}
+
+% uncomment if using a sans serif font
 \renewcommand{\familydefault}{\sfdefault}
+
+\usepackage[T1]{fontenc}
 
 % getting rid of line numbers
 \thispagestyle{empty}
@@ -20,9 +32,7 @@
 
 % header stuff
 \newenvironment{resumeheader} {
-  % before
 } {
-  % after
 }
 
 % personal information
@@ -54,7 +64,7 @@
 \newcommand{\makeheader} {
   \begin{center}
     %\fontfamily{iwona}\selectfont
-    \textmd{\huge \textsc{\resumename}} \par
+    \textmd{\Huge \textsc{\resumename}} \par
     { \small
       \resumeaddrone \par
       \resumeaddrtwo \par
