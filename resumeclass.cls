@@ -4,7 +4,7 @@
 \ProvidesClass{resumeclass}
 \LoadClassWithOptions{article}
 
-\usepackage[margin=0.75in]{geometry}
+\usepackage[margin=0.8in]{geometry}
 \usepackage{tabularx}
 \usepackage{multirow}
 \usepackage{soul}
