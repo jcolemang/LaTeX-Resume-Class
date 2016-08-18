@@ -4,15 +4,17 @@
 \ProvidesClass{resumeclass}
 \LoadClassWithOptions{article}
 
-\RequirePackage[margin=0.75in]{geometry}
+\usepackage[margin=0.75in]{geometry}
 \usepackage{tabularx}
 \usepackage{multirow}
-\usepackage{enumerate}
 \usepackage{soul}
+
+%\usepackage{enumitem}
+%\setlist{nolistsep}
 
 % interesting serif font, sort of a medieval look, particularly
 % in the J's 
-% \usepackage{gentium}
+%\usepackage{gentium}
 
 % good serif font. I would describe it as professional, maybe
 % slightly conservative
@@ -23,7 +25,6 @@
 
 % uncomment if using a sans serif font
 \renewcommand{\familydefault}{\sfdefault}
-
 \usepackage[T1]{fontenc}
 
 % getting rid of line numbers
@@ -68,8 +69,8 @@
     { \small
       \resumeaddrone \par
       \resumeaddrtwo \par
+      \resumeemail \par
       \phone \par
-      \resumeemail
     }
   \end{center}
 }
@@ -89,7 +90,7 @@
 
 % for things like 'Experience', 'Education'
 \newcommand{\sectiontitle}[1] {
-  {\footnotesize \uppercase{\so{\textbf{#1}}}}
+  \noalign{\medskip} {\footnotesize \uppercase{\so{\textbf{#1}}}}
 }
 
 % Really the center column of the page, but the absolute left
@@ -99,17 +100,12 @@
 }
 
 \newcommand{\rightcolumn}[1] {
-  & #1 \\ \\
-}
-
-% Doesn't include the extra line break of my standard right column
-\newcommand{\rightcolumnsinglebreak}[1] {
   & #1 \\
 }
 
 % fills both the absolute center and right columns of the page
 \newcommand{\bigcolumn}[1] {
-  & #1 \\ \\
+  & \multicolumn{2}{X}{\small #1} \\
 }
 
 
