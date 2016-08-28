@@ -4,7 +4,7 @@
 \ProvidesClass{resumeclass}
 \LoadClassWithOptions{article}
 
-\usepackage[margin=0.8in]{geometry}
+\usepackage[left=0.75in, right=0.75in, top=0.7in, bottom=0.7in]{geometry}
 \usepackage{tabularx}
 \usepackage{multirow}
 \usepackage{soul}
@@ -53,14 +53,14 @@
 }
 
 \newcommand{\phonenumber}[1] {%
-  {\small #1 } \par
+  {\small #1} \par
 }
 
 \newcommand{\email}[1] {%
   {\small #1} \par 
 }
 
-\newcommand{\other}[1] {%
+\newcommand{\website}[1] {%
   {\small #1} \par
 }
 
