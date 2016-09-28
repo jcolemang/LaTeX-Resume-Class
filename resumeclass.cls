@@ -64,6 +64,12 @@
   {\small #1} \par
 }
 
+\newcommand{\profiles}[1] {%
+  {\small #1} \par
+}
+
+
+
 
 % Used for the main body of the resume but NOT the header
 % The resume header is considered a separate entity.
