@@ -52,7 +52,15 @@ put something like an "Experience" or "Education" header. An example is given be
 #### `\rightcolumn`
 
 The rightmost column of the resume. This is where things like dates should be
-placed.
+placed. An example usage is given below
+
+```
+...
+
+\rightcolumn{May 2017 - January 2020}
+
+...
+```
 
 #### `\centercolumn`
 
