@@ -1,10 +1,9 @@
 
-
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{resumeclass}
 \LoadClassWithOptions{article}
 
-\usepackage[left=0.4in, right=0.4in, top=0.5in, bottom=0.5in]{geometry}
+\usepackage[left=0.4in, right=0.4in, top=0.6in, bottom=0.6in]{geometry}
 \usepackage{tabularx}
 \usepackage{multirow}
 \usepackage{soul}
@@ -36,8 +35,8 @@
   \centering
   \tabularx{\textwidth}{ X r }
 } {
+  \vspace{1mm}
   \endtabularx
-  \vspace{3mm}
 }
 \newcommand{\name}[1] {%
   \multirow{2}{*}{\textmd{\Huge \textsc{#1}}}
@@ -97,7 +96,7 @@
 
 % Really the center column of the page, but the absolute left
 % is reserved for the section title
-\newcommand{\leftcolumn}[1] {%
+\newcommand{\centercolumn}[1] {%
   & #1
 }
 
