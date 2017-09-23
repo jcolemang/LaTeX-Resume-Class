@@ -3,7 +3,10 @@
 A basic resume class file for a three column resume layout. This is a pretty
 basic resume class. The layout and formatting is
 in [the cls file](./resumeclass.cls) and an example of the usage is
-in [the tex file](./resume.tex).
+in [the tex file](./resume.tex). I would encourage anyone to modify the layout
+to fit their own needs, but really if you would like it to be anything but a
+basic three column layout I you should probably write your own `.cls` file and
+use this as inspiration.
 
 ## Usage
 
