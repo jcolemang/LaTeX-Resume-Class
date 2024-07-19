@@ -6,53 +6,79 @@
 \begin{document}
 
 \begin{resumeheader}
-  \name{James Coleman Gibson}
-  \profiles{GitHub/StackOverflow: jcolemang}
+  \name{James Gibson}
   \email{james.c.gibson@hey.com}
   \phonenumber{224 -- 258 -- 3270}
 \end{resumeheader}
 
 
 \begin{resumebody}
+  % \sectiontitle{Objective}
 
   \sectiontitle{Experience}
 
   \centercolumn{
-    \experiencetitle{Site Reliability Engineer}
-    \experiencelocation{Fast Radius, Chicago}
+    \experiencetitle{Backend Developer}
+    \experiencelocation{Sybridge Digital Solutions, Chicago}
     \begin{experiencenotes}
       \experiencenote{%
-          Here's one thing I did
+          Expanded events sent from Go services to provide necessary data to other business units
       }
       \experiencenote{%
-          Rearchitected part analysis in collaboration with other software engineers to eliminate timeouts
-      }
-      \experiencenote{%
-          Onboarded organization onto Datadog and spread knowledge 
-      }
-      \experiencenote{%
-          Managed and maintained AWS infrastructure for organization
-      }
-      \experiencenote{%
-          Expanded single sign on support in ex\_aws, a popular Elixir library
+          Modified service to support multiple production speed options (e.g., expedited or standard delivery)
       }
     \end{experiencenotes}
   }
-  \rightcolumn{May '21 -- Current}
+  \rightcolumn{June '23 -- Current}
+
+  \centercolumn{
+    \experiencetitle{Site Reliability Engineer}
+    \experiencelocation{Sybridge Digital Solutions (formerly Fast Radius), Chicago}
+    \begin{experiencenotes}
+      \experiencenote{%
+          Managed and maintained multi-account AWS infrastructure primarily based around ECS and RDS, with events sent via SQS and EventBridge and continuous deployments ran via Github Actions
+      }
+      \experiencenote{%
+          Overhauled infrastructure architecture to simplify developer workflows, reduce costs, and more clearly separate environments as part of company transition
+      }
+      \experiencenote{%
+          Instrumented and improved the observability of multiple Go and Elixir services
+      }
+      \experiencenote{%
+          Rearchitected job processing infrastructure for CAD file analysis service to eliminate high volume of timeouts
+      }
+      \experiencenote{%
+          Contributed to open-source Elixir library ex\_aws to add single sign-on credential support
+      }
+      \experiencenote{%
+          Wrote base Terraform for multiple services to be understood and modified by developers
+      }
+      \experiencenote{%
+          Automated infrastructure auditing and service deployments using a Python Slack bot
+      }
+      \experiencenote{%
+          Trained developers and documented common issues while assisting in troubleshooting
+      }
+      \experiencenote{%
+          Onboarded organization onto Datadog, wrote documentation and gave presentations to improve developer familiarity
+      }
+    \end{experiencenotes}
+  }
+  \rightcolumn{May '21 -- June '23}
 
   \centercolumn{
     \experiencetitle{Software Engineer, Data Pipeline Platform Team}
     \experiencelocation{Groupon, Chicago}
     \begin{experiencenotes}
       \experiencenote{%
-          Collaborated with the team to bring Airflow-as-a-service from inception to production on
-          dedicated on-premises VMs, followed by a migration to AWS on Kubernetes
+          Brought Airflow-as-a-service from inception to production on
+          dedicated on-premises VMs, followed by a migration to Kubernetes using AWS EKS
       }
       \experiencenote{%
           Defined the AWS infrastructure required by multiple services using Terraform
       }
       \experiencenote{%
-          Provided on-call and onboarding support for the 20 teams on Airflow
+          Provided on-call and onboarding support for the 20 teams using Airflow
       }
       \experiencenote{%
           Developed internal Python packages for Airflow tailored to user requirements
@@ -62,7 +88,7 @@
   \rightcolumn{June '18 -- May '21}
 
   \centercolumn{
-    \experiencetitle{Intern}
+    \experiencetitle{Software Engineering Intern}
     \experiencelocation{Groupon, Chicago}
     \begin{experiencenotes}
       \experiencenote{%
@@ -73,37 +99,34 @@
         Interfaced between Java, Python, and R to run data scientists' code on a
         Hadoop cluster
       }
-      \experiencenote{%
-        Allowed data scientists to use an agile approach in developing machine
-        learning models
-      }
+      % \experiencenote{%
+        % Allowed data scientists to use an agile approach in developing machine
+        % learning models
+      % }
     \end{experiencenotes}
   }
   \rightcolumn{May '17 -- Aug '17}
 
   \centercolumn{%
-    \experiencetitle{Intern}
+    \experiencetitle{Software Engineering Intern}
     \experiencelocation{Beckman-Coulter, Indianapolis}
     \begin{experiencenotes}
       \experiencenote{%
           Used Angular, RxJS, TypeScript, and MongoDB to build a front-end prototype
       }
       \experiencenote{%
-          Researched the feasibility of web technologies and high availabilities for a future product
+          Researched the feasibility of distributed databases for a future product
       }
     \end{experiencenotes}
   }
   \rightcolumn{June '16 -- Aug '16}
 
   \centercolumn{%
-    \experiencetitle{Developer}
+    \experiencetitle{Software Engineering Intern}
     \experiencelocation{Rose-Hulman Ventures}
     \begin{experiencenotes}
       \experiencenote{%
-        Maintained and developed a workers' compensation website
-      }
-      \experiencenote{%
-        Redesigned most frequently used page on site
+        Redesigned the most frequently used page on a workers' compensation website
       }
     \end{experiencenotes}
   }
@@ -114,20 +137,16 @@
     \experiencelocation{Rose-Hulman Computer Science Department}
     \begin{experiencenotes}
       \experiencenote{%
-          Worked with students from many backgrounds to help them get the most from each course
-      }
-      \experiencenote{%
-          Assisten in a variety of classes ranging from freshman to senior level
+          Assisted students from many backgrounds to help them get the most from each course
       }
     \end{experiencenotes}
   }
-  \rightcolumn{Sept '15 -- Current}
+  \rightcolumn{Sept '15 -- May '18}
 
   \sectiontitle{Education}
 
   \bigcolumn{%
-    Bachelor of Science, Computer Science, May '18 \newline
-    Minor in Mathematics \newline
+    Bachelor of Science, Computer Science, Minor in Mathematics, May '18 \newline
     Rose-Hulman Institute of Technology \newline
     GPA 3.79 \newline
   }
@@ -139,11 +158,11 @@
     \experiencelocation{CSSE403, Programming Language Paradigms}
     \begin{experiencenotes}
       \experiencenote{%
-        Wrote a Red-Black tree implementation which enforced color invariant at
+        Wrote a Red-Black tree implementation which enforces color invariant at
         compile time
       }
       \experiencenote{%
-        Used GHC extensions to allow for dependent typing in Haskell
+        Used GHC extensions to allow dependent typing in Haskell
       }
     \end{experiencenotes}
   }
@@ -154,31 +173,14 @@
     \experiencelocation{CSSE374, Software Design}
     \begin{experiencenotes}
       \experiencenote{%
-        Constructed a static analysis and UML generation library for Java
-      }
-      \experiencenote{%
-        Designed the library to be extensible alongside two other team members
+        Constructed an extensible static analysis and UML generation library for Java
       }
     \end{experiencenotes}
   }
   \rightcolumn{Dec '16 -- Feb '17}
 
-  \centercolumn{%
-    \experiencetitle{Scheme Interpreter}
-    \experiencelocation{CSSE304, Programming Language Concepts}
-    \begin{experiencenotes}
-      \experiencenote{%
-        Implemented a Scheme-like programming language using Scheme
-      }
-      \experiencenote{%
-        Added features to our language not present in R6RS
-      }
-    \end{experiencenotes}
-  }
-  \rightcolumn{Oct '16 -- Nov '17}
-
-  \sectiontitle{Additional}
-  \bigcolumn{Here's some stuff}
+  \sectiontitle{Personal}
+  \bigcolumn{Avid but lousy violinist and chess player}
 
 \end{resumebody}
 
