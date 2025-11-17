@@ -1,0 +1,142 @@
+
+
+\documentclass{resumeclass}
+
+
+\begin{document}
+
+\begin{resumeheader}
+  \name{James Gibson}
+  \email{james.c.gibson@hey.com}
+  \phonenumber{123 -- 456 -- 7890}
+\end{resumeheader}
+
+
+\begin{resumebody}
+  \sectiontitle{Experience}
+
+  \centercolumn{
+    \experiencetitle{Senior Software Engineer}
+    \experiencelocation{Capital One, Chicago}
+    \begin{experiencenotes}
+      \experiencenote{%
+          Led income screening enhancement development work to include previously reported income in screening calculation, expected to reduce credit exposure by up to \$52M
+      }
+      \experiencenote{%
+          Reduced redundant logic by consolidating functionally identical AWS Lambda functions
+      }
+      \experiencenote{%
+          Presented software design concepts, Java concurrency misconceptions, and batch job orchestration principles to team to improve shared knowledge
+      }
+      \experiencenote{%
+          Improved acceptance and unit tests to catch unexpected behaviors like the introduction of duplicates into our batch applications
+      }
+      \experiencenote{%
+          Tech stack focus was on Java, Spring, AWS, Python, and PySpark
+      }
+    \end{experiencenotes}
+  }
+  \rightcolumn{Nov '24 -- Current}
+
+  \centercolumn{
+    \experiencetitle{Software Engineer}
+    \experiencelocation{Sybridge Digital Solutions, Chicago}
+    \begin{experiencenotes}
+      \experiencenote{%
+          Expanded events sent from Go services to provide necessary data to other business units via Salesforce integration and a data warehouse
+      }
+      \experiencenote{%
+          Modified backend service to support multiple production speed options (e.g., expedited or standard delivery) in customer checkout
+      }
+      \experiencenote{%
+          Implemented REST API endpoints for managing quotes, orders, and part analysis
+      }
+      \experiencenote{%
+          Designed reusable PostgreSQL data migration process motivated by a need to separate part specifications from part quotes
+      }
+    \end{experiencenotes}
+  }
+  \rightcolumn{June '24 -- Aug '24}
+
+  \centercolumn{
+    \experiencetitle{Site Reliability Engineer}
+    \experiencelocation{Sybridge Digital Solutions (formerly Fast Radius), Chicago}
+    \begin{experiencenotes}
+      \experiencenote{%
+          Managed and maintained multi-account AWS infrastructure primarily based around ECS and RDS, with events sent via SQS and EventBridge
+      }
+      \experiencenote{%
+          Rearchitected job processing infrastructure for CAD file analysis service to eliminate high volume of timeouts
+      }
+      \experiencenote{%
+          Contributed to open-source Elixir library ex\_aws to add single sign-on credential support
+      }
+      \experiencenote{%
+          Wrote base Terraform for multiple continuously deployed services and ensured simplicity to enable developers to easily make changes
+      }
+      \experiencenote{%
+          Overhauled infrastructure architecture to simplify developer workflows, reduce costs, and more clearly separate environments as part of company transition
+      }
+      \experiencenote{%
+          Onboarded organization onto Datadog, wrote documentation and gave presentations to improve developer familiarity
+      }
+      \experiencenote{%
+          Instrumented and improved the observability of Go and Elixir services
+      }
+      \experiencenote{%
+          Provided regular on-call support to developers and created and monitored infrastructure alerts to ensure smooth operation of all services
+      }
+    \end{experiencenotes}
+  }
+  \rightcolumn{May '21 -- June '24}
+
+  \centercolumn{
+    \experiencetitle{Software Engineer, Data Pipeline Platform Team}
+    \experiencelocation{Groupon, Chicago}
+    \begin{experiencenotes}
+      \experiencenote{%
+          Brought Airflow-as-a-service from inception to production on
+          dedicated on-premises VMs, followed by a migration to Kubernetes using AWS EKS
+      }
+      \experiencenote{%
+          Provided on-call and onboarding support for the 20 teams using Airflow
+      }
+      \experiencenote{%
+          Developed internal Python packages for Airflow tailored to user requirements
+      }
+      \experiencenote{%
+          Maintained various REST and ETL services written in Java
+      }
+      \experiencenote{%
+          Received Data and Discovery leadership award in March 2020
+      }
+    \end{experiencenotes}
+  }
+  \rightcolumn{June '18 -- May '21}
+
+  \centercolumn{
+    \experiencetitle{Software Engineering Intern}
+    \experiencelocation{Groupon, Chicago}
+    \begin{experiencenotes}
+      \experiencenote{%
+        Interfaced between Java, Python, and R to run data scientists' code on a
+        Hadoop cluster
+      }
+    \end{experiencenotes}
+  }
+  \rightcolumn{May '17 -- Aug '17}
+
+  \sectiontitle{Education}
+
+  \bigcolumn{%
+    Bachelor of Science, Computer Science, Minor in Mathematics, May '18 \newline
+    Rose-Hulman Institute of Technology, GPA 3.79 \newline
+    Pearson Education Outstanding Graduating Senior \newline
+  }
+
+  \sectiontitle{Personal}
+  \bigcolumn{Avid but lousy violinist and chess player}
+
+\end{resumebody}
+
+\end{document}
